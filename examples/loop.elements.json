@@ -1,0 +1,112 @@
+[
+  {
+    "id": "dream",
+    "type": "rectangle",
+    "x": 0,
+    "y": 100,
+    "width": 240,
+    "height": 100,
+    "text": "DREAM\nHold the goal"
+  },
+  {
+    "id": "work",
+    "type": "rectangle",
+    "x": 360,
+    "y": 100,
+    "width": 240,
+    "height": 100,
+    "text": "WORK\nAdapt + choose"
+  },
+  {
+    "id": "act",
+    "type": "rectangle",
+    "x": 720,
+    "y": 100,
+    "width": 240,
+    "height": 100,
+    "text": "ACT\nUse one expert"
+  },
+  {
+    "id": "verify",
+    "type": "rectangle",
+    "x": 720,
+    "y": 340,
+    "width": 240,
+    "height": 100,
+    "text": "VERIFY\nObserve the result"
+  },
+  {
+    "id": "done",
+    "type": "rectangle",
+    "x": 1080,
+    "y": 340,
+    "width": 240,
+    "height": 100,
+    "text": "DONE\nGoal proven",
+    "strokeColor": "#527e79"
+  },
+  {
+    "id": "adapt",
+    "type": "rectangle",
+    "x": 360,
+    "y": 340,
+    "width": 240,
+    "height": 100,
+    "text": "ADAPT\nKeep the user flow"
+  },
+  {
+    "id": "dream-work",
+    "type": "arrow",
+    "startElementId": "dream",
+    "endElementId": "work"
+  },
+  {
+    "id": "work-act",
+    "type": "arrow",
+    "startElementId": "work",
+    "endElementId": "act"
+  },
+  {
+    "id": "act-verify",
+    "type": "arrow",
+    "startElementId": "act",
+    "endElementId": "verify"
+  },
+  {
+    "id": "verify-done",
+    "type": "arrow",
+    "startElementId": "verify",
+    "endElementId": "done"
+  },
+  {
+    "id": "verify-adapt",
+    "type": "arrow",
+    "startElementId": "verify",
+    "endElementId": "adapt"
+  },
+  {
+    "id": "adapt-dream",
+    "type": "arrow",
+    "startElementId": "adapt",
+    "endElementId": "dream",
+    "x": 356,
+    "y": 390,
+    "width": 236,
+    "height": 186,
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        -236,
+        0
+      ],
+      [
+        -236,
+        -186
+      ]
+    ],
+    "endArrowhead": "arrow"
+  }
+]

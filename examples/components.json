@@ -1,0 +1,19 @@
+{
+  "elements": [
+    {"id":"client","type":"rectangle","x":0,"y":70,"width":240,"height":150,"backgroundColor":"#dfe7eb"},
+    {"id":"client-title","type":"text","x":22,"y":95,"text":"Web client","fontSize":22},
+    {"id":"client-detail","type":"text","x":22,"y":145,"text":"session + requests","fontSize":16},
+    {"id":"auth","type":"diamond","x":340,"y":65,"width":190,"height":160,"text":"Auth\nverify token","backgroundColor":"#edddd1"},
+    {"id":"api","type":"rectangle","x":640,"y":70,"width":250,"height":150,"text":"API\norders + events","backgroundColor":"#dce6dc"},
+    {"id":"table","type":"rectangle","x":1010,"y":35,"width":280,"height":220,"backgroundColor":"#faf7ef"},
+    {"id":"table-head","type":"rectangle","x":1010,"y":35,"width":280,"height":48,"text":"orders","backgroundColor":"#dfe7eb"},
+    {"id":"table-fields","type":"text","x":1030,"y":105,"text":"PK id : uuid\nFK customer_id\nstatus : text\ncreated_at : timestamp","fontSize":16},
+    {"id":"request","type":"arrow","startElementId":"client","endElementId":"auth"},
+    {"id":"allowed","type":"arrow","startElementId":"auth","endElementId":"api"},
+    {"id":"write","type":"arrow","startElementId":"api","endElementId":"table"}
+  ],
+  "groups": [
+    {"id":"client-card","elements":["client","client-title","client-detail"]},
+    {"id":"orders-table","elements":["table","table-head","table-fields"]}
+  ]
+}

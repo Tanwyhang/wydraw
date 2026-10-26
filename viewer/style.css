@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+main {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background: #f5f1e8;
+  color: #373b3b;
+  font:
+    13px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+}
+main {
+  position: relative;
+}
+section {
+  height: 100%;
+}
+.mode-toggle {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: #527e79;
+  background: #faf7ef;
+  border: 1px solid #c9c3b6;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px #373b3b12;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+.mode-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px #373b3b20;
+}
+.mode-toggle:focus-visible {
+  outline: 2px solid #527e79;
+  outline-offset: 3px;
+}
+.mode-toggle:disabled {
+  opacity: 0.5;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+main[data-mode="view"] .excalidraw .layer-ui__wrapper {
+  display: none;
+}
+
+.untangle-toggle {
+  position: absolute;
+  right: 72px;
+  bottom: 18px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 42px;
+  padding: 0 12px;
+  color: #527e79;
+  background: #faf7ef;
+  border: 1px solid #c9c3b6;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 3px 12px #373b3b12;
+}
+.untangle-toggle input {
+  accent-color: #527e79;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}

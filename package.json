@@ -1,0 +1,29 @@
+{
+  "name": "wydraw",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent-first local pencil diagrams with an editable canvas",
+  "dependencies": {
+    "@excalidraw/excalidraw": "0.18.1",
+    "esbuild": "0.25.12",
+    "express": "4.22.2",
+    "mcp-excalidraw-server": "2.1.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  },
+  "scripts": {
+    "test": "node --test tests/diagram.test.mjs",
+    "test:viewer": "node --test --test-concurrency=1 tests/viewer.test.mjs tests/drag.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "bin": {
+    "wydraw": "scripts/diagram.mjs"
+  }
+}
