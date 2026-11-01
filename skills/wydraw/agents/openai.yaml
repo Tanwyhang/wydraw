@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wydraw"
+  short_description: "Draw editable diagrams with pencil styling"
+  default_prompt: "Use $wydraw to create or edit the requested diagram."

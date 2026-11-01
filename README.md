@@ -1,8 +1,10 @@
 # wydraw
 
-Agent-first local diagrams with pencil strokes, warm paper, rounded cards, and an editable Excalidraw canvas. Draw through a small CLI, batch changes as JSON, render PNG/SVG headlessly, and switch to cursor mode whenever a person wants to edit.
+Agent-first local diagrams with pencil strokes, FeedMe orange accents, warm paper, rounded cards, and an editable Excalidraw canvas. Draw through a small CLI, batch changes as JSON, render PNG/SVG headlessly, and switch to cursor mode whenever a person wants to edit.
 
 ![A grouped diagram with connected arrows](examples/components.png)
+
+The default palette uses orange `#FF8125`, pale peach `#FFF0E3`, warm white `#FFFAF5`, and graphite text. Explicit element colors are preserved.
 
 Style is a default, not a notation. Mix objects, people, auth boundaries, services, schemas, tables, keys, relationships, annotations, and native shapes in whatever composition makes the system understandable. No account, CDN, or computer-use automation is required to draw.
 

@@ -7,18 +7,18 @@ import { expandElementsForExport } from "../node_modules/mcp-excalidraw-server/d
 
 export const palettes = {
   dark: {
-    background: "#f5f1e8",
-    panel: "#eee8db",
+    background: "#fffaf5",
+    panel: "#fff0e3",
     border: "#68645d",
     text: "#373b3b",
-    accent: "#527e79",
+    accent: "#ff8125",
   },
   light: {
     background: "#f4f5f7",
     panel: "#ffffff",
     border: "#526176",
     text: "#243247",
-    accent: "#187b79",
+    accent: "#ff8125",
   },
 };
 export const hash = (value) => createHash("sha256").update(value).digest("hex");
@@ -125,7 +125,7 @@ export function compose(input, theme = "dark", existing = []) {
       y: Math.floor(i / 3) * 180,
       width: shape ? 240 : 0,
       height: shape ? 88 : 0,
-      strokeColor: e.type === "text" ? p.text : p.border,
+      strokeColor: e.type === "text" ? p.text : e.type === "arrow" ? p.accent : p.border,
       backgroundColor: shape ? p.panel : "transparent",
       fillStyle: "solid",
       strokeWidth: 1.5,

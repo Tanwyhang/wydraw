@@ -9,7 +9,7 @@ main {
   height: 100%;
 }
 body {
-  background: #f5f1e8;
+  background: #fffaf5;
   color: #373b3b;
   font:
     13px ui-monospace,
@@ -33,8 +33,8 @@ section {
   width: 42px;
   height: 42px;
   padding: 0;
-  color: #527e79;
-  background: #faf7ef;
+  color: #b9480a;
+  background: #fff0e3;
   border: 1px solid #c9c3b6;
   border-radius: 15px;
   box-shadow: 0 3px 12px #373b3b12;
@@ -48,7 +48,7 @@ section {
   box-shadow: 0 5px 18px #373b3b20;
 }
 .mode-toggle:focus-visible {
-  outline: 2px solid #527e79;
+  outline: 2px solid #b9480a;
   outline-offset: 3px;
 }
 .mode-toggle:disabled {
@@ -79,15 +79,15 @@ main[data-mode="view"] .excalidraw .layer-ui__wrapper {
   gap: 7px;
   height: 42px;
   padding: 0 12px;
-  color: #527e79;
-  background: #faf7ef;
+  color: #b9480a;
+  background: #fff0e3;
   border: 1px solid #c9c3b6;
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 3px 12px #373b3b12;
 }
 .untangle-toggle input {
-  accent-color: #527e79;
+  accent-color: #ff8125;
   width: 16px;
   height: 16px;
   margin: 0;
